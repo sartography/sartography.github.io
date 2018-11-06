@@ -1,4 +1,11 @@
 .welcome {
   background-color: #4c4b4c;
   padding: 5%;
+
+  img {
+    max-width: 100%;
+  }
+  p {
+    text-align: center;
+  }
 }
