@@ -1,0 +1,23 @@
+// Import theming functions
+@import '~@angular/material/theming';
+// Import your custom theme
+@import '../../sartography_material';
+// Load the Sartography Theme
+@include sartography-theme($sartography-theme);
+
+.about-us {
+  position: relative;
+  background-color: mat-color($sartography-primary, 50);
+  min-height: 500px;
+
+  img {
+    max-width: 100%;
+    position: absolute;
+    bottom: 5%;
+  }
+
+  h1 {
+    background-color: mat-color($sartography-primary, 50);
+    color: mat-contrast($sartography-primary, 50);
+  }
+}
