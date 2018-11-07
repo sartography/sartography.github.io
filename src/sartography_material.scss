@@ -1,84 +1,16 @@
 @import '../node_modules/@angular/material/theming';
 @include mat-core();
-$sartography-green: (
-  50 : #def3f0,
-  100 : #77cfbf,
-  200 : #77cfbf,
-  300 : #36bba5,
-  400 : #00ac92,
-  500 : #009c7f,
-  600 : #008e73,
-  700 : #007e63,
-  800 : #006e55,
-  900 : #005239,
-  A100 : #bee6c7,
-  A200 : #93d6a3,
-  A400 : #36bb62,
-  A700 : #008e31,
-  contrast: (
-    50 : #000000,
-    100 : #000000,
-    200 : #000000,
-    300 : #000000,
-    400 : #000000,
-    500 : #000000,
-    600 : #000000,
-    700 : #ffffff,
-    800 : #ffffff,
-    900 : #ffffff,
-    A100 : #000000,
-    A200 : #000000,
-    A400 : #000000,
-    A700 : #000000,
-  )
-);
-$sartography-blue: (
-  50 : #e3f6fa,
-  100 : #b9e7f3,
-  200 : #8ed7eb,
-  300 : #6ac7e4,
-  400 : #55bbe0,
-  500 : #47afdc,
-  600 : #3fa2ce,
-  700 : #368fbb,
-  800 : #327ea7,
-  900 : #275e85,
-  A100 : #c4c9eb,
-  A200 : #9da6dd,
-  A400 : #5667c5,
-  A700 : #263aa5,
-  contrast: (
-    50 : #000000,
-    100 : #000000,
-    200 : #000000,
-    300 : #000000,
-    400 : #000000,
-    500 : #000000,
-    600 : #000000,
-    700 : #000000,
-    800 : #000000,
-    900 : #ffffff,
-    A100 : #000000,
-    A200 : #000000,
-    A400 : #ffffff,
-    A700 : #ffffff,
-  )
-);
-$sartography-red: (
-  50 : #fce5e9,
-  100 : #f9bec8,
-  200 : #f494a4,
-  300 : #ed6d82,
-  400 : #e65368,
-  500 : #e04152,
-  600 : #d03c50,
-  700 : #bb364c,
-  800 : #a73049,
-  900 : #822743,
-  A100 : #f3d1c3,
-  A200 : #edb59d,
-  A400 : #e4875a,
-  A700 : #ca6938,
+$sartography-teal: (
+  50 : #BEE4E1,
+  100 : #BEE4E1,
+  200 : #8CD1C8,
+  300 : #8CD1C8,
+  400 : #36BBA4,
+  500 : #36BBA4,
+  600 : #247A6B,
+  700 : #247A6B,
+  800 : #133A32,
+  900 : #133A32,
   contrast: (
     50 : #000000,
     100 : #000000,
@@ -90,15 +22,79 @@ $sartography-red: (
     700 : #ffffff,
     800 : #ffffff,
     900 : #ffffff,
+  )
+);
+$sartography-purple-grey: (
+  50 : #E5E2F1,
+  100 : #E5E2F1,
+  200 : #9D98CB,
+  300 : #9D98CB,
+  400 : #554DA0,
+  500 : #554DA0,
+  600 : #302E5E,
+  700 : #302E5E,
+  800 : #12131F,
+  900 : #12131F,
+  A100 : #F2EDED,
+  A200 : #CCC8C8,
+  A400 : #999696,
+  A700 : #727071,
+  A900 : #4C4B4C,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #000000,
+    400 : #ffffff,
+    500 : #ffffff,
+    600 : #ffffff,
+    700 : #ffffff,
+    800 : #ffffff,
+    900 : #ffffff,
     A100 : #000000,
     A200 : #000000,
     A400 : #000000,
-    A700 : #000000,
+    A700 : #ffffff,
+    A900 : #ffffff,
   )
 );
-$sartography-primary: mat-palette($sartography-green);
-$sartography-accent: mat-palette($sartography-blue);
-$sartography-warn: mat-palette($sartography-red);
+$sartography-raspberry-yellow: (
+  50 : #F9BFCC,
+  100 : #F9BFCC,
+  200 : #F597A5,
+  300 : #F597A5,
+  400 : #D41D55,
+  500 : #D41D55,
+  600 : #931A43,
+  700 : #931A43,
+  800 : #521227,
+  900 : #521227,
+  A100 : #FFECBD,
+  A200 : #FFD671,
+  A400 : #C7A02F,
+  A700 : #876A29,
+  A900 : #473917,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #000000,
+    400 : #ffffff,
+    500 : #ffffff,
+    600 : #ffffff,
+    700 : #ffffff,
+    800 : #ffffff,
+    900 : #ffffff,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #000000,
+    A700 : #ffffff,
+    A900 : #ffffff,
+  )
+);
+$sartography-primary: mat-palette($sartography-teal);
+$sartography-accent: mat-palette($sartography-purple-grey);
+$sartography-warn: mat-palette($sartography-raspberry-yellow);
 $sartography-theme: mat-light-theme($sartography-primary, $sartography-accent, $sartography-warn);
 @include angular-material-theme($sartography-theme);
 // Define a mixin that accepts a theme and outputs the color styles for the component.
@@ -110,36 +106,29 @@ $sartography-theme: mat-light-theme($sartography-primary, $sartography-accent, $
   body {
     background-color: mat-color($primary, 50);
     margin: 0px;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
   }
   p {
     color: #666;
+    font-size: 16px;
     font-weight: 400;
     max-width: 600px;
   }
   h1, h2 {
-    background-color: #fff;
-    color: #000;
     padding: 10px 10px;
     margin: 0 0 10px 0;
   }
   h1 {
-    font-size: 24px;
+    font-size: 54px;
+    font-weight: 400;
   }
   h2 {
-    font-size: 18px;
+    font-size: 40px;
     font-weight: 700;
   }
-  h2.mat-h2, h2.mat-title {
-    background-color: mat-contrast($primary, 900);
-    font-size: 24px;
-    line-height: 30px;
+  h3 {
+    font-size: 20px;
     font-weight: 700;
-    margin: 0px;
-    padding: 0px;
-  }
-  .mat-raised-button {
-    background-color: #42BD41;
-    color: #fff;
   }
   .spacer {
     flex: 1 1 auto;
