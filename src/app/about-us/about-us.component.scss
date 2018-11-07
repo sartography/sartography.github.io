@@ -6,23 +6,34 @@
 @include sartography-theme($sartography-theme);
 
 .about-us {
+  padding: 5%;
   background-color: mat-color($sartography-primary, 50);
+  color: mat-contrast($sartography-primary, 50);
+  text-align: center;
+
+  h1{
+    padding: 2%;
+  }
 
   mat-card {
-    margin: 5%;
-    background-color: mat-color($sartography-primary, 600);
-    color: mat-contrast($sartography-primary, 600);
-    text-align: center;
+    padding: 5%;
 
-    mat-tab-group {
-      background-color: #ffffff;
-      color: mat-color($sartography-accent, A700);
-      min-height: 400px;
+    img {
+      border-radius: 150px;
+      height: 200px;
+      width: 200px;
     }
+  }
+  mat-tab-group {
+    background-color: #ffffff;
+    //background-color: mat-contrast($sartography-accent, A700);
+    //color: mat-color($sartography-accent, A700);
+    min-height: 400px;
+    padding: 2%;
   }
   img {
     max-width: 90%;
-    padding-bottom: 3%;
+    padding: 2%;
   }
 
 }
