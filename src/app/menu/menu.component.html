@@ -5,17 +5,32 @@
   <mat-menu #menu="matMenu">
     <button
       mat-menu-item
-      onclick=""
+      (click)="scroll()"
+    >
+      <span>HOME</span>
+    </button>
+    <button
+      mat-menu-item
+      (click)="scroll('about-us')"
     >
       <span>ABOUT US</span>
     </button>
-    <button mat-menu-item>
+    <button
+      mat-menu-item
+      (click)="scroll('case-studies')"
+    >
       <span>CASE STUDIES</span>
     </button>
-    <button mat-menu-item>
+    <button
+      mat-menu-item
+      (click)="scroll('reviews')"
+    >
       <span>WHAT PEOPLE SAY</span>
     </button>
-    <button mat-menu-item>
+    <button
+      mat-menu-item
+      (click)="scroll('contact-us')"
+    >
       <span>CONTACT US</span>
     </button>
   </mat-menu>
