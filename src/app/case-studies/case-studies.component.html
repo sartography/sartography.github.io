@@ -3,4 +3,40 @@
   id="case-studies"
 >
   <h1>CASE STUDIES</h1>
+  <div
+    fxLayout="row"
+    fxLayout.lt-xs="column"
+    fxLayoutGap="2%"
+    fxLayoutAlign="space-between"
+  >
+    <div *ngFor="let study of caseStudies">
+      <mat-card
+        class="intro"
+        (click)="setStudyView(study)"
+      >
+        <img src="{{ study.featureLink }}">
+      </mat-card>
+    </div>
+  </div>
+  <div
+    *ngIf="caseStudy"
+    class="study"
+    id="study"
+  >
+    <div fxLayout="row"
+         fxLayout.lt-sm="column"
+         fxLayoutGap="2%"
+         fxLayoutAlign="space-between stretch"
+    >
+      <div fxFlex="20%">
+        <h2>{{ caseStudy.projectName }}</h2>
+        <h3>{{ caseStudy.tagLine }} @ {{ caseStudy.organizationName }}</h3>
+      </div>
+      <div fxFlex="70%">
+        <p>{{ caseStudy.description }}</p>
+        <img src="{{ caseStudy.imageLink }}">
+      </div>
+    </div>
+
+  </div>
 </div>
