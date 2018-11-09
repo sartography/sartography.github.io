@@ -10,7 +10,7 @@ export interface CaseStudy {
 
 export interface Testimonial {
   name: string;
-  title: string;
+  title?: string;
   quote: string;
   link?: string;
   caseStudy?: CaseStudy;

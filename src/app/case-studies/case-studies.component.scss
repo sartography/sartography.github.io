@@ -40,10 +40,19 @@
     padding: 2%;
     text-align: start;
 
-    h2, h3 {
+    h2, h3, p, img {
       padding: 2%;
       margin: 1%;
     }
+  }
 
+  .testimonial {
+    margin-top: 5%;
+    background-color: mat-color($sartography-accent, 700);
+
+    p{
+      padding: 8%;
+      color: mat-contrast($sartography-accent, 700);
+    }
   }
 }

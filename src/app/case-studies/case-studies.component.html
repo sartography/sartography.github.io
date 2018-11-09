@@ -28,11 +28,18 @@
          fxLayoutGap="2%"
          fxLayoutAlign="space-between stretch"
     >
-      <div fxFlex="20%">
+      <div fxFlex="30%">
         <h2>{{ caseStudy.projectName }}</h2>
-        <h3>{{ caseStudy.tagLine }} @ {{ caseStudy.organizationName }}</h3>
+        <h3>{{ caseStudy.organizationName }}</h3>
+        <div
+          *ngIf="caseStudy.testimonials[0]"
+          class="testimonial"
+        >
+          <p>"{{ caseStudy.testimonials[0].quote}}" - {{ caseStudy.testimonials[0].name}}</p>
+        </div>
       </div>
-      <div fxFlex="70%">
+      <div fxFlex="60%">
+        <h3>{{ caseStudy.tagLine }}</h3>
         <p>{{ caseStudy.description }}</p>
         <img src="{{ caseStudy.imageLink }}">
       </div>
