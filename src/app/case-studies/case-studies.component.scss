@@ -20,6 +20,13 @@
     object-fit: cover;
   }
 
+  button {
+    background-color: mat-color($sartography-warn, 500);
+    color: mat-contrast($sartography-warn, 500);
+    padding: 3%;
+    cursor: pointer;
+  }
+
   .intro {
     background-color: mat-color($sartography-accent, A100);
     padding: 3%;

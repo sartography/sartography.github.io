@@ -18,12 +18,15 @@ export class CaseStudiesComponent implements OnInit {
   ngOnInit() {
     this.api.getCaseStudies().subscribe(studies => {
       this.caseStudies = studies;
-      console.log('case studies!', studies);
     });
   }
 
   setStudyView(study: CaseStudy) {
     this.caseStudy = study;
+  }
+
+  goWebsite(link: string) {
+    window.open(link, '_blank');
   }
 
 }

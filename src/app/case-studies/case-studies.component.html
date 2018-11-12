@@ -28,15 +28,36 @@
          fxLayoutGap="2%"
          fxLayoutAlign="space-between stretch"
     >
-      <div fxFlex="30%">
+      <div
+        fxFlex="30%"
+        fxLayout="column"
+        fxLayoutGap="2%"
+      >
         <h2>{{ caseStudy.projectName }}</h2>
         <h3>{{ caseStudy.organizationName }}</h3>
         <div
-          *ngIf="caseStudy.testimonials[0]"
-          class="testimonial"
+          *ngIf="caseStudy.testimonials"
         >
-          <p>"{{ caseStudy.testimonials[0].quote}}" - {{ caseStudy.testimonials[0].name}}</p>
+          <div
+            *ngFor="let t of caseStudy.testimonials"
+            class="testimonial"
+          >
+            <p>"{{ t.quote}}"</p>
+            <p>- {{ t.name}}</p>
+          </div>
         </div>
+        <button
+          *ngIf="caseStudy.websiteLink"
+          (click)="goWebsite(caseStudy.websiteLink)"
+        >
+          Visit Website
+        </button>
+        <button
+          *ngIf="caseStudy.gitHubLink"
+          (click)="goWebsite(caseStudy.gitHubLink)"
+        >
+          View on GitHub
+        </button>
       </div>
       <div fxFlex="60%">
         <h3>{{ caseStudy.tagLine }}</h3>
