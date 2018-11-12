@@ -10,6 +10,10 @@
   background-color: mat-color($sartography-primary, 50);
   color: mat-contrast($sartography-primary, 50);
 
+  a {
+    color: mat-color($sartography-accent, 700);
+  }
+
   .map img {
     max-height: 100%;
     max-width: 100%;
