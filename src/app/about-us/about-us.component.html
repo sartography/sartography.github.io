@@ -37,30 +37,28 @@
       fxLayout.lt-md="column"
       fxLayoutGap="2%"
     >
-      <mat-card>
-        <div class="circle-img">
-          <img src="../../assets/images/staunton_old_map.jpg">
-        </div>
-        <h2>Dan Funk</h2>
-        <h3>Owner, Lead Developer</h3>
-        <p>I am a successful, battle proven, software engineer with a gift for conveying complex technical information.</p>
-      </mat-card>
-      <mat-card>
-        <div class="circle-img">
-          <img src="../../assets/images/compass.jpg">
-        </div>
-        <h2>Aaron Louie</h2>
-        <h3>Senior Developer</h3>
-        <p>I am a successful, battle proven, software engineer with a gift for conveying complex technical information.</p>
-      </mat-card>
-      <mat-card>
-        <div class="circle-img">
-          <img src="../../assets/images/astro_clock.jpg">
-        </div>
-        <h2>Eleanor Graham</h2>
-        <h3>Developer</h3>
-        <p>I am a successful, battle proven, software engineer with a gift for conveying complex technical information.</p>
-      </mat-card>
+      <div *ngFor="let t of teamMembers">
+        <mat-card>
+          <div class="circle-img">
+            <img src="{{ t.imageLink }}">
+          </div>
+          <h2>{{ t.name }}</h2>
+          <h3>{{ t.title }}</h3>
+          <p>{{ t.description }}</p>
+          <button
+            *ngIf="t.gitHubLink"
+            (click)="goWebsite(t.gitHubLink)"
+          >
+            GitHub
+          </button>
+          <button
+            *ngIf="t.linkedInLink"
+            (click)="goWebsite(t.linkedInLink)"
+          >
+            LinkedIn
+          </button>
+        </mat-card>
+      </div>
     </div>
   </div>
   <div fxLayoutAlign="center center">

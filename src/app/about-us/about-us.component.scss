@@ -15,6 +15,14 @@
     padding: 2%;
   }
 
+  button {
+    margin: 2%;
+    padding: 3%;
+    background-color: mat-color($sartography-warn, 500);
+    color: mat-contrast($sartography-warn, 500);
+    cursor: pointer;
+  }
+
   mat-card {
     padding: 5%;
 
