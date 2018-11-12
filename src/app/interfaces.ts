@@ -3,6 +3,8 @@ export interface CaseStudy {
   tagLine: string;
   description: string;
   organizationName: string;
+  websiteLink: string;
+  gitHubLink: string;
   imageLink: string;
   featureLink: string;
   testimonials?: Testimonial[];
