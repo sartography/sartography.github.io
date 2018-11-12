@@ -1,3 +1,12 @@
+export interface TeamMember {
+  name: string;
+  title: string;
+  description: string;
+  imageLink: string;
+  gitHubLink: string;
+  linkedInLink: string;
+}
+
 export interface CaseStudy {
   projectName: string;
   tagLine: string;

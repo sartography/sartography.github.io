@@ -2,7 +2,7 @@ import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
-import { CaseStudy } from './interfaces';
+import { CaseStudy, TeamMember } from './interfaces';
 
 @Injectable()
 export class ApiService {
@@ -13,6 +13,11 @@ export class ApiService {
 
   public getCaseStudies(): Observable<CaseStudy[]> {
     return this.httpClient.get<CaseStudy[]>('./assets/json/case-studies.json')
+      .pipe((catchError(this.handleError)));
+  }
+
+  public getTeamMembers(): Observable<TeamMember[]> {
+    return this.httpClient.get<TeamMember[]>('./assets/json/team-members.json')
       .pipe((catchError(this.handleError)));
   }
 
