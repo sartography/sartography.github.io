@@ -3,7 +3,7 @@
     "name": "Dan Funk",
     "title": "Owner, Lead Developer",
     "description": "I am a successful, battle proven, software engineer with a gift for conveying complex technical information.",
-    "imageLink": "../../assets/images/staunton_old_map.jpg",
+    "imageLink": "../../assets/images/team/dan.jpeg",
     "gitHubLink": "https://github.com/danfunk",
     "linkedInLink": "https://www.linkedin.com/in/funkdan/"
   },
@@ -11,7 +11,7 @@
     "name": "Aaron Louie",
     "title": "Senior Developer",
     "description": "I am a successful, battle proven, software engineer with a gift for conveying complex technical information.",
-    "imageLink": "../../assets/images/compass.jpg",
+    "imageLink": "../../assets/images/team/aaron.jpeg",
     "gitHubLink": "https://github.com/ajlouie",
     "linkedInLink": "https://www.linkedin.com/in/aaronjlouie/"
   },
@@ -19,7 +19,7 @@
     "name": "Eleanor Graham",
     "title": "Developer",
     "description": "I am a successful, battle proven, software engineer with a gift for conveying complex technical information.",
-    "imageLink": "../../assets/images/astro_clock.jpg",
+    "imageLink": "../../assets/images/team/eleanor.png",
     "gitHubLink": "https://github.com/eleanorgraham",
     "linkedInLink": "https://www.linkedin.com/in/eleanor-graham-9358115a/"
   }
