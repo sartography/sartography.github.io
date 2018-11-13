@@ -42,9 +42,12 @@
           <div class="circle-img">
             <img src="{{ t.imageLink }}">
           </div>
-          <h2>{{ t.name }}</h2>
+          <h2>{{ t.firstName }}</h2>
+          <h2>{{ t.lastName }}</h2>
           <h3>{{ t.title }}</h3>
-          <p>{{ t.description }}</p>
+          <div *ngFor="let d of t.description">
+            <p>{{ d }}</p>
+          </div>
           <button
             *ngIf="t.gitHubLink"
             (click)="goWebsite(t.gitHubLink)"

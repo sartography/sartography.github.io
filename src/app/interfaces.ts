@@ -1,7 +1,8 @@
 export interface TeamMember {
-  name: string;
+  firstName: string;
+  lastName: string;
   title: string;
-  description: string;
+  description: string[];
   imageLink: string;
   gitHubLink: string;
   linkedInLink: string;

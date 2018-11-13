@@ -1,24 +1,36 @@
 [
   {
-    "name": "Dan Funk",
+    "firstName": "Dan",
+    "lastName": "Funk",
     "title": "Owner, Lead Developer",
-    "description": "I am a successful, battle proven, software engineer with a gift for conveying complex technical information.",
+    "description": [
+      "Dan leads all development efforts at Sartography, working together with clients and the Sartography team to create innovative applications. As a part of larger teams, he's created custom search systems for the US Patent Office, developed a new e-commerce system for UnderArmour, and led development efforts on research projects out of the University of Virginia. Previously, Dan was a lead developer, and software development manager for RosettaStone.",
+      "A native of Staunton, Va, Dan is the proud father of his 13 year old son Jonah. When they aren't building robots at the local Makerspace, they can be found riding their bikes on some of Virginia's excellent rails-to-trails bike paths."
+    ],
     "imageLink": "../../assets/images/team/dan.jpeg",
     "gitHubLink": "https://github.com/danfunk",
     "linkedInLink": "https://www.linkedin.com/in/funkdan/"
   },
   {
-    "name": "Aaron Louie",
+    "firstName": "Aaron",
+    "lastName": "Louie",
     "title": "Senior Developer",
-    "description": "I am a successful, battle proven, software engineer with a gift for conveying complex technical information.",
+    "description": [
+      "Aaron is a serial entrepreneur and freelance Creative Director who draws from over 16 years of experience in web design, UX, information architecture, interaction design, user research, usability, and content strategy consulting. In addition to his work with Sartography, Aaron is involved with multiple entrepreneurial community initiatives aimed at nurturing a vibrant startup ecosystem in the Shenandoah Valley.",
+      "Stuff about Aaron's family and interests! Stuff about Aaron's family and interests! Stuff about Aaron's family and interests! Stuff about Aaron's family and interests! Stuff about Aaron's family and interests! Stuff about Aaron's family and interests! "
+    ],
     "imageLink": "../../assets/images/team/aaron.jpeg",
     "gitHubLink": "https://github.com/ajlouie",
     "linkedInLink": "https://www.linkedin.com/in/aaronjlouie/"
   },
   {
-    "name": "Eleanor Graham",
+    "firstName": "Eleanor",
+    "lastName": "Graham",
     "title": "Developer",
-    "description": "I am a successful, battle proven, software engineer with a gift for conveying complex technical information.",
+    "description": [
+      "Eleanor brings a rich background in music, community development, and finance to her work as a software developer. Eleanor brings a rich background in music, community development, and finance to her work as a software developer. Eleanor brings a rich background in music, community development, and finance to her work as a software developer. Eleanor brings a rich background in music, community development, and finance to her work as a software developer. ",
+      "Eleanor Loves Pickles! Eleanor Loves Pickles! Eleanor Loves Pickles! Eleanor Loves Pickles! Eleanor Loves Pickles! Eleanor Loves Pickles! Eleanor Loves Pickles! Eleanor Loves Pickles! Eleanor Loves Pickles! "
+    ],
     "imageLink": "../../assets/images/team/eleanor.png",
     "gitHubLink": "https://github.com/eleanorgraham",
     "linkedInLink": "https://www.linkedin.com/in/eleanor-graham-9358115a/"
