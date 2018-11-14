@@ -36,8 +36,12 @@
       fxLayout="row"
       fxLayout.lt-md="column"
       fxLayoutGap="2%"
+      fxLayoutAlign="space-between stretch"
     >
-      <div *ngFor="let t of teamMembers">
+      <div
+        *ngFor="let t of teamMembers"
+        fxFlex="30%"
+      >
         <mat-card>
           <div class="circle-img">
             <img src="{{ t.imageLink }}">
