@@ -106,11 +106,12 @@ $sartography-theme: mat-light-theme($sartography-primary, $sartography-accent, $
   body {
     background-color: mat-color($primary, 50);
     margin: 0px;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-family: 'Montserrat', sans-serif;
   }
   p {
     color: mat-color($sartography-accent, A900);
-    font-size: 16px;
+    font-size: 14pt;
+    line-height: 20pt;
     font-weight: 400;
   }
   h1, h2 {
@@ -119,7 +120,7 @@ $sartography-theme: mat-light-theme($sartography-primary, $sartography-accent, $
     text-transform: uppercase;
   }
   h1 {
-    font-size: 54px;
+    font-size: 24pt;
     font-weight: 400;
     text-align: center;
   }

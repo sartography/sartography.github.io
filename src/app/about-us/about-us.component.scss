@@ -9,9 +9,14 @@
   padding: 5%;
   background-color: mat-color($sartography-primary, 50);
   color: mat-contrast($sartography-primary, 50);
-  text-align: center;
+
+  .tab-content {
+    max-width: 800px;
+    margin: auto;
+  }
 
   h1{
+    text-align: center;
     padding: 2%;
   }
 
